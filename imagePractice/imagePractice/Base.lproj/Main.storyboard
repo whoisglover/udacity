@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -16,11 +16,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-yB-NtB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="-4" y="0.0" width="328" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="action" id="gmd-WO-ivS">
                                         <connections>
@@ -35,8 +35,11 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRy-J7-XAu">
+                                <rect key="frame" x="-4" y="64" width="328" height="440"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhT-BI-s6M">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="-4" y="524" width="328" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="l3p-6U-nSh"/>
                                     <barButtonItem systemItem="camera" id="1mn-ws-5Ub">
@@ -53,27 +56,25 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwf-LJ-MHu">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <rect key="frame" x="16" y="101" width="288" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-2Z-dYe">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <rect key="frame" x="106" y="481" width="108" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRy-J7-XAu">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lwf-LJ-MHu" firstAttribute="top" secondItem="xBN-yB-NtB" secondAttribute="bottom" constant="57" id="4NX-43-nFW"/>
-                            <constraint firstItem="8aA-2Z-dYe" firstAttribute="top" secondItem="pRy-J7-XAu" secondAttribute="bottom" constant="50" id="5ub-YZ-kH7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QhT-BI-s6M" secondAttribute="bottom" id="J1l-RI-eF5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xBN-yB-NtB" secondAttribute="trailing" constant="-20" id="Kby-CN-ueK"/>
+                            <constraint firstItem="pRy-J7-XAu" firstAttribute="top" secondItem="xBN-yB-NtB" secondAttribute="bottom" constant="20" id="ORR-aY-04U"/>
                             <constraint firstItem="pRy-J7-XAu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Obw-7M-FMK"/>
                             <constraint firstItem="QhT-BI-s6M" firstAttribute="top" secondItem="8aA-2Z-dYe" secondAttribute="bottom" constant="26" id="Qga-8O-Yaq"/>
+                            <constraint firstItem="QhT-BI-s6M" firstAttribute="top" secondItem="pRy-J7-XAu" secondAttribute="bottom" constant="20" id="RoB-ga-7Ad"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pRy-J7-XAu" secondAttribute="trailing" constant="-20" id="UGx-9R-CoG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8aA-2Z-dYe" secondAttribute="trailing" constant="90" id="agh-Vv-cad"/>
                             <constraint firstItem="lwf-LJ-MHu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fZV-38-c8s"/>
@@ -81,64 +82,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="QhT-BI-s6M" secondAttribute="trailing" constant="-20" id="kj3-f2-7es"/>
                             <constraint firstItem="8aA-2Z-dYe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="mKQ-Vh-ZqJ"/>
                             <constraint firstItem="xBN-yB-NtB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mh7-6y-3oY"/>
-                            <constraint firstItem="pRy-J7-XAu" firstAttribute="top" secondItem="lwf-LJ-MHu" secondAttribute="bottom" constant="50" id="rRt-O7-Q90"/>
                             <constraint firstItem="lwf-LJ-MHu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ufL-AF-eOT"/>
                             <constraint firstItem="QhT-BI-s6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="wmr-gN-ddW"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="xBN-yB-NtB"/>
-                                <exclude reference="QhT-BI-s6M"/>
-                                <exclude reference="lwf-LJ-MHu"/>
-                                <exclude reference="8aA-2Z-dYe"/>
-                                <exclude reference="pRy-J7-XAu"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="Kby-CN-ueK"/>
-                                <exclude reference="fiI-6S-0Rp"/>
-                                <exclude reference="mh7-6y-3oY"/>
-                                <exclude reference="4NX-43-nFW"/>
-                                <exclude reference="fZV-38-c8s"/>
-                                <exclude reference="ufL-AF-eOT"/>
-                                <exclude reference="Obw-7M-FMK"/>
-                                <exclude reference="UGx-9R-CoG"/>
-                                <exclude reference="rRt-O7-Q90"/>
-                                <exclude reference="5ub-YZ-kH7"/>
-                                <exclude reference="agh-Vv-cad"/>
-                                <exclude reference="mKQ-Vh-ZqJ"/>
-                                <exclude reference="Qga-8O-Yaq"/>
-                                <exclude reference="kj3-f2-7es"/>
-                                <exclude reference="wmr-gN-ddW"/>
-                                <exclude reference="J1l-RI-eF5"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="xBN-yB-NtB"/>
-                                <include reference="QhT-BI-s6M"/>
-                                <include reference="lwf-LJ-MHu"/>
-                                <include reference="8aA-2Z-dYe"/>
-                                <include reference="pRy-J7-XAu"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="Kby-CN-ueK"/>
-                                <include reference="fiI-6S-0Rp"/>
-                                <include reference="mh7-6y-3oY"/>
-                                <include reference="4NX-43-nFW"/>
-                                <include reference="fZV-38-c8s"/>
-                                <include reference="ufL-AF-eOT"/>
-                                <include reference="Obw-7M-FMK"/>
-                                <include reference="UGx-9R-CoG"/>
-                                <include reference="rRt-O7-Q90"/>
-                                <include reference="5ub-YZ-kH7"/>
-                                <include reference="agh-Vv-cad"/>
-                                <include reference="mKQ-Vh-ZqJ"/>
-                                <include reference="Qga-8O-Yaq"/>
-                                <include reference="kj3-f2-7es"/>
-                                <include reference="wmr-gN-ddW"/>
-                                <include reference="J1l-RI-eF5"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="bottomText" destination="8aA-2Z-dYe" id="yAE-VJ-oWB"/>
@@ -152,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="429"/>
+            <point key="canvasLocation" x="118" y="379"/>
         </scene>
     </scenes>
 </document>
